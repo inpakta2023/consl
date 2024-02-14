@@ -1,0 +1,40 @@
+/*=========================================
+ 01. Theme Default CSS  
+ ==========================================*/
+
+/*---------------------------
+	Fonts
+----------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
+
+
+
+// fonts
+$base-font-size: 15;
+$base-font: 'DM Sans';
+$heading-font: 'Cormorant';
+
+
+
+// color
+$dark-gray: #1F212D;
+$body-color: #707070;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #848892;
+
+$theme-primary-color: #EC2526;
+$body-bg-color: #fff;
+$section-bg-color: #FAFAFA;
+$section-bg-color-s2: #F5F5F5;
+$section-bg-color-s3: #F1F3EE;
+$section-bg-color-s4: #F5F5F5;
+$text-color: #707070;
+$text-light-color: #7b7b7b;
+$heading-color: $dark-gray;
+$heading-color2: #3F3F3F;
+$border-color: #D7D7D7;
+$border-color-s2: #e4ebf2;

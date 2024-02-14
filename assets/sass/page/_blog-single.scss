@@ -1,0 +1,349 @@
+/* =======================
+26. Blog Single Page
+ ========================*/
+
+/* blog-single-page-area  */
+
+.blog-single-page-area {
+   .blog-single-wrap {
+      .blog-single-text {
+         ul {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+
+            li {
+               font-size: 14px;
+               font-style: normal;
+               font-weight: 400;
+               line-height: normal;
+
+               &+li {
+                  margin-left: 20px;
+               }
+
+               i {
+                  color: $theme-primary-color;
+               }
+
+               strong {
+                  color: $dark-gray;
+                  font-family: $heading-font;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 700;
+                  line-height: 28px;
+               }
+            }
+         }
+
+
+         blockquote {
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-family: $heading-font;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 0;
+
+            @media(max-width:991px) {
+               font-size: 45px;
+               padding: 70px 0;
+            }
+
+            @media(max-width:575px) {
+               font-size: 30px;
+               padding: 30px 0;
+            }
+         }
+      }
+
+      .blog-single-text-wrap {
+         margin-top: 30px;
+         margin-bottom: 40px;
+
+         h2 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 46px;
+            margin-bottom: 30px;
+
+            @media(max-width:767px) {
+               font-size: 30px;
+            }
+
+            @media(max-width:575px) {
+               font-size: 25px;
+               line-height: 36px;
+               margin-bottom: 20px;
+            }
+         }
+
+         p {
+            margin-bottom: 30px;
+         }
+
+         ul li {
+            padding-bottom: 15px;
+         }
+      }
+
+      blockquote {
+         background: $dark-gray;
+         padding: 30px;
+         font-family: $heading-font;
+         font-size: 24px;
+         font-style: italic;
+         font-weight: 700;
+         line-height: 34px;
+         color: $white;
+         margin-bottom: 40px;
+
+         @media(max-width:575px) {
+            padding: 15px;
+            font-size: 18px;
+            line-height: 27px;
+         }
+
+         span {
+            display: block;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            font-family: $base-font;
+            color: $text-color;
+            margin-top: 15px;
+         }
+      }
+
+      .detail-img {
+         margin-top: 40px;
+         margin-bottom: 30px;
+      }
+
+      .tag-share {
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+
+         @media(max-width:767px) {
+            flex-wrap: wrap;
+         }
+
+         h3 {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            margin-right: 20px;
+
+            @media(max-width:767px) {
+               font-size: 20px;
+               margin-right: 10px;
+            }
+         }
+
+         ul {
+            display: flex;
+
+            @media(max-width:767px) {
+               flex-wrap: wrap;
+            }
+
+            li {
+               &+li {
+                  margin-left: 25px;
+
+                  @media(max-width:767px) {
+                     margin-left: 5px;
+                  }
+               }
+
+               a {
+                  color: $dark-gray;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: 28px;
+                  font-family: $heading-font;
+                  padding-left: 20px;
+                  position: relative;
+
+                  @media(max-width:767px) {
+                     font-size: 16px;
+                  }
+
+                  &:before {
+                     position: absolute;
+                     left: 0;
+                     top: 0;
+                     content: url(../images/tag.png);
+                  }
+
+
+                  &:hover {
+                     color: $theme-primary-color;
+                  }
+               }
+            }
+         }
+      }
+
+
+      /*** comment-respond ***/
+      .comment-respond {
+         margin-top: 70px;
+         padding: 50px;
+         background: $section-bg-color;
+
+         @media(max-width:1199px) {
+            padding: 30px;
+         }
+
+         @media(max-width:575px) {
+            padding: 15px;
+         }
+
+         .comment-respond-inner {
+            background: $white;
+            padding: 70px;
+
+            @media(max-width:1199px) {
+               padding: 40px;
+            }
+
+            @media(max-width:575px) {
+               padding: 15px;
+            }
+         }
+
+         .comment-reply-title {
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+
+            @include media-query(991px) {
+               font-size: 40px;
+            }
+
+            @media(max-width:575px) {
+               font-size: 30px;
+            }
+         }
+
+         p {
+            margin-bottom: 50px;
+         }
+
+         form input,
+         form textarea {
+            color: #A5A5A5;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: none;
+            width: 100%;
+            height: 55px;
+            border: 0;
+            padding: 6px 15px;
+            margin-bottom: 15px;
+            outline: 0;
+            border-radius: 0px;
+            box-shadow: none;
+            @include transition-time(0.3s);
+            border: 1px solid rgba(31, 33, 45, 0.15);
+
+            &:focus {
+               box-shadow: none;
+               border-color: $theme-primary-color;
+            }
+
+            @include media-query(991px) {
+               height: 50px;
+            }
+         }
+
+         form textarea {
+            height: 220px;
+            padding: 15px;
+
+            @include media-query(991px) {
+               height: 150px;
+            }
+         }
+
+         .form-inputs,
+         .form-textarea {
+            overflow: hidden;
+
+            label {
+               font-family: $heading-font;
+               font-size: 18px;
+               font-style: normal;
+               font-weight: 700;
+               line-height: 28px;
+               margin-bottom: 10px;
+            }
+         }
+
+         .form-inputs>.form-field:nth-child(1) {
+            width: 49%;
+            float: left;
+
+            @include media-query(767px) {
+               width: 100%;
+               float: none;
+            }
+         }
+
+         .form-inputs>.form-field:nth-child(2) {
+            width: 49%;
+            float: right;
+
+            @include media-query(767px) {
+               width: 100%;
+               float: none;
+            }
+         }
+
+         .form-submit input {
+            max-width: 180px;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 29px;
+            margin-bottom: 0;
+            border: 1px solid $theme-primary-color;
+            outline: 0;
+            background: $theme-primary-color;
+            border-radius: 0;
+            margin-top: 30px;
+            color: $white;
+         }
+
+         .form-submit input:hover {
+            background-color: darken($theme-primary-color, 9%);
+            color: $white;
+         }
+      }
+   }
+
+   &.full-width {
+      .blog-img {
+         img {
+            width: 100%;
+         }
+      }
+
+      .detail-img {
+         img {
+            width: 100%; 
+         }
+      }
+   }
+}

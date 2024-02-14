@@ -1,0 +1,170 @@
+/* ======================================
+20. About Page  
+========================================*/
+
+/* about-page */
+
+.about-page {
+
+	// graph-section
+
+	.graph-section {
+		padding: 0;
+
+		&:before,
+		&:after {
+			display: none;
+		}
+
+		.graph-left-img {
+			margin: 0;
+		}
+
+		.graph-text {
+			padding: 0;
+		}
+
+		.graph-left-img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 50%;
+
+			@media(max-width:991px) {
+				position: relative;
+				text-align: center;
+				width: 100%;
+				margin-bottom: 30px;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	// work-section
+
+	.work-section {
+		.work-item {
+			display: flex;
+
+			@media(max-width:991px) {
+				display: block;
+				margin-bottom: 30px;
+			}
+
+			.work-content {
+				flex-basis: 49%;
+				padding: 40px 60px;
+				border: 1px solid rgba(31, 33, 45, 0.15);
+
+				p {
+					margin-bottom: 0;
+				}
+
+				@media(max-width:1399px) {
+					padding: 20px;
+				}
+			}
+
+			.work-img {
+				flex-basis: 51%;
+
+				img {
+					width: 100%;
+
+					@media(max-width:1199px) {
+						min-height: 395px;
+						object-fit: cover;
+					}
+
+					@media(max-width:991px) {
+						min-height: 100%;
+					}
+				}
+			}
+
+			&:nth-child(odd) {
+				.work-img {
+					order: 1;
+
+					@media(max-width:991px) {
+						order: unset;
+					}
+				}
+
+
+				.work-content {
+					order: 2;
+
+					@media(max-width:991px) {
+						order: unset;
+					}
+				}
+			}
+
+			.work-top {
+				display: flex;
+				align-items: center;
+				margin-bottom: 20px;
+
+				i {
+					display: block;
+					width: 86px;
+					height: 86px;
+					line-height: 86px;
+					font-size: 45px;
+					text-align: center;
+					margin-right: 20px;
+					transition: all .3s;
+					border-radius: 5px;
+				}
+			}
+
+			.work-text {
+				h2 {
+					color: $body-color;
+					font-size: 48px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 58px;
+					margin-bottom: 0;
+
+					@media(max-width:450px) {
+						font-size: 38px;
+					}
+				}
+
+				h3 {
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 34px;
+
+					@media(max-width:450px) {
+						font-size: 20px;
+					}
+
+					a {
+						color: $dark-gray;
+
+						&:hover {
+							color: $theme-primary-color;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.work-top {
+
+					i {
+						background: $theme-primary-color;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}

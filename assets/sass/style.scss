@@ -1,0 +1,82 @@
+/*============================================
+
+   Theme Name: Consl - Consulting Business HTML5 Template
+   Author : envalab
+   Author URI: https://themeforest.net/user/envalab
+   Description: Consl - Consulting Business HTML5 Template
+   Version: 1.0
+
+==============================================*/
+/* CSS Index
+==============================================
+
+    01. Theme Default CSS
+    02. Header Style
+    03. Footer
+    04. Hero
+    05. About-section
+    06. Features-section
+    07. Animate-marque-sec
+    08. Service-section
+    09. Video-section
+    10. Funfact-section
+    11. Case-section
+    12. Testimonial-section
+    13. Team-section
+    14. Faq-section
+    15. Contact-area
+    16. Blog-section
+    17. Cta-section
+    18. Home-style-2
+    19. Home-style-3
+    20. About Page
+    21. Services Page
+    22. Team Page
+    23. Project-page
+    24. Faq-page
+    25. Blog Page
+    26. Blog Single Page
+    27. Contact Page
+    28. 404 page
+
+==============================================*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/about";
+@import "page/services";
+@import "page/team";
+@import "page/projects";
+@import "page/faq";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
+@import "page/404";

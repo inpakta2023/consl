@@ -1,0 +1,29 @@
+/* =============================
+24. Faq-page
+ ===============================*/
+
+/* faq-page */
+
+.faq-page {
+	.choose-section {
+		padding-bottom: 100px;
+	}
+	.case-section {
+		position: relative;
+		&:after {
+			position: absolute;
+			left: 0;
+			top: -67px;
+			height: 67px;
+			content: "";
+			background: #fff;
+			width: 50%;
+			border-top: 3px solid #EC2526;
+			z-index: 11;
+
+			@media(max-width:991px){
+              display: none;
+			}
+		}
+	}
+}
